@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+body {
+    background-color: #f0cef7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.input_area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    margin-bottom: 30px;
+
+}
+.container {
+    box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
+    margin-top: 10px;
+    width: 70vw;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container_title {
+    box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
+    margin-top: 40px;
+    width: 70vw;
+    padding: 20px 40px 20px 40px;
+    background-color: #8660a5;
+    color: white;
+    font-size: large;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+input {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 70%;
+    height: 30px;
+    border-radius: 7px;
+    border: 2px solid #8660a5;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.common_button{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 120px;
+    height: 35px;
+    border-radius: 7px;
+    background-color: #8660a5;
+    color: white;
+    border: none;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    line-height:15px;
+}
+
+.common_button:hover{
+    cursor: pointer;
+}
+
+.task{
+    padding: 3px;
+    height: auto;
+    width: 100%;
+    border-bottom: 2px solid #8660a5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task_text{
+    width: 70%;
+    overflow: hidden;
+}
+
+.buttons {
+    margin-right: 0;
+}
+
+.buttons > button {
+    width: 20px;
+    height: 20px;
+    margin: 6px;
+    border: none;
+    background-color: transparent;
+    background-size: cover;  
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.buttons > button:hover {
+    cursor: pointer;
+}
+
+.done_task {
+    background-image: url("images/check-mark.png");
+}
+
+.delete_task {
+    background-image: url("images/delete.png");
+}
+
+.edit_task {
+    background-image: url("images/edit.png");
+}
+
+.done {
+    background-color:#8660a5;
+    color: white;
+}
+
+.edit_buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.edit_buttons > button {
+    margin: 10px;
+}
+
+.edit_area{
+    width: 70vw;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #f0cef7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal{
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.open{
+    opacity: 1;
+    z-index: 999;
+}
+
+.text_edit{
+    width: 80%;
+}
+
+.previous_text{
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+}
